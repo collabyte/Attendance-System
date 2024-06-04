@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Blacklist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reset Blacklist</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add_member.html">Add Member</a></li>
+                <li><a href="record_attendance.html">Record Attendance</a></li>
+                <li><a href="reset_blacklist.html">Reset Blacklist</a></li>
+                <li><a href="member_attendance.html">Member Attendance</a></li>
+            </ul>
+        </nav>
+
+        <div class="section">
+            <input type="text" id="resetName" placeholder="Member Name">
+            <button onclick="resetBlacklist()">Reset Blacklist</button>
+        </div>
+        <div class="section">
+            <h2>Executive Members</h2>
+            <table id="membersTable">
+                <thead>
+                    <tr>
+                        <th>Serial No</th>
+                        <th>Name</th>
+                        <th>Post</th>
+                        <th>Total Present</th>
+                        <th>Total Absent</th>
+                        <th>Consecutive Absent</th>
+                        <th>Blacklisted</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="membersList">
+                    <!-- Executive members will be listed here -->
+                </tbody>
+            </table>
+            <div class="total-info">
+                <span>Total Executives:</span> <span id="totalExecutives"></span>
+            </div>
+            <div class="total-info">
+                <span>Blacklisted Members:</span> <span id="blacklistedMembers"></span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Attendance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Member Attendance</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add_member.html">Add Member</a></li>
+                <li><a href="record_attendance.html">Record Attendance</a></li>
+                <li><a href="reset_blacklist.html">Reset Blacklist</a></li>
+                <li><a href="member_attendance.html">Member Attendance</a></li>
+            </ul>
+        </nav>
+        <div class="section">
+            <input type="text" id="searchAttendanceName" placeholder="Search Member Name">
+            <button onclick="attendanceSystem.showAttendance()">Show Attendance</button>
+            <div id="attendanceList" class="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
